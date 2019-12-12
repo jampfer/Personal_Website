@@ -1,0 +1,394 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!--Google Fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Bebas+Neue&display=swap" rel="stylesheet">
+
+    <title>Jude Ampfer</title>
+</head>
+<style>
+    .pad {
+        padding-top: 56px;
+    }
+    
+    body {
+        background-color: grey;
+    }
+    
+    h1 {
+        font-size: 120px;
+        font-family: 'Bebas Neue', cursive;
+        padding-top: 40px;
+        text-align: center;
+    }
+    
+    h2 {
+        font-size: 60px;
+        font-family: 'Bebas Neue', cursive;
+    }
+    
+    h3 {
+        font-size: 40px;
+        font-family: 'Bebas Neue', cursive;
+    }
+    
+    h4 {
+        font-size: 20px;
+        margin: 0% 5% 0% 5%;
+        padding: 3% 0% 3% 0%;
+        background-color: rgb(231, 231, 225);
+        border: 1px solid black;
+    }
+    
+    h5 {
+        font-size: 20px;
+        padding: 8px 0% 0% 0%;
+    }
+    
+    h6 {
+        font-size: 20px;
+        text-align: center;
+    }
+    
+    div a:link {
+        text-decoration: none;
+        color: black;
+    }
+    
+    div a:hover {
+        text-decoration: none;
+        text-shadow: 0px 1px rgba(0, 0, 0, 0.5);
+    }
+    
+    .desc {
+        font-size: 25px;
+        margin: 0% 5% 0% 5%;
+        padding: 3% 0% 3% 0%;
+        background-color: rgb(231, 231, 225);
+        border: 1px solid black;
+    }
+    
+    .footer {
+        background-color: rgb(231, 231, 225);
+        border: 1px solid black;
+        margin: 10% -15px 0% -15px;
+        padding: 1% 0px 3% 0px;
+    }
+    
+    hr {
+        border: 1px solid grey;
+    }
+    
+    .flex {
+        display: flex;
+        flex-direction: row;
+    }
+    
+    .flex-col {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .header-logo {
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: bold;
+        color: white;
+        background-color: rgb(15, 89, 89);
+        padding: 10px 10px 10px 30px;
+        border-radius: 1px;
+        font-size: 1.5em;
+    }
+    
+    .navb {
+        background-color: rgb(15, 89, 89);
+    }
+    
+    nav ul {
+        list-style: none;
+        display: flex;
+        flex-direction: row;
+        margin: 10px 10px 10px 10px
+    }
+    
+    nav li {
+        flex: auto;
+        margin: 0px 15px 0px 15px;
+        font-family: 'Bebas Neue', cursive;
+    }
+    
+    nav a {
+        font-size: 1.5em;
+        color: white;
+        text-decoration: none;
+        display: flex;
+        justify-content: center;
+    }
+    
+    nav a:hover {
+        color: white;
+        background-color: rgb(23, 166, 151);
+        text-decoration: none;
+        text-shadow: 0px 1px rgba(0, 0, 0, 0.5);
+        border-radius: 3px;
+    }
+    
+    .pos {
+        position: fixed;
+        z-index: 1;
+    }
+    
+    .main {
+        font-family: 'Bebas Neue', cursive;
+        color: rgb(241, 235, 235);
+        text-align: center;
+        padding-top: 5%;
+    }
+    
+    .mainpic {
+        width: 400px;
+    }
+    
+    .footerlogo {
+        width: 65px;
+    }
+    
+    .footerlogo a:hover {
+        opacity: 0.8;
+    }
+    
+    .disp {
+        display: inline;
+    }
+    
+    @media(max-width: 700px) {
+        .pad {
+            padding-top: 53px;
+        }
+        .flex {
+            display: flex;
+            flex-direction: column;
+        }
+        .flex-col {
+            display: flex;
+            flex-direction: row;
+        }
+        h1 {
+            font-size: 80px;
+            font-family: 'Bebas Neue', cursive;
+            padding-top: 40px;
+            text-align: center;
+        }
+        h2 {
+            font-size: 40px;
+            font-family: 'Bebas Neue', cursive;
+        }
+        h3 {
+            font-size: 30px;
+            font-family: 'Bebas Neue', cursive;
+        }
+        h4 {
+            font-size: 20px;
+            margin: 0% 5% 0% 5%;
+            padding: 3% 3% 3% 3%;
+            background-color: rgb(250, 249, 187);
+            border: 1px solid black;
+        }
+        h5 {
+            font-size: 20px;
+            padding: 0px 0% 0% 0%;
+        }
+        h6 {
+            font-size: 20px;
+            text-align: center;
+        }
+        .header-logo {
+            display: none;
+        }
+        .pos {
+            position: fixed;
+            z-index: 1;
+            margin-left: -40px;
+        }
+        nav a {
+            font-size: 1.4em;
+            color: white;
+            text-decoration: none;
+            display: flex;
+            justify-content: center;
+        }
+        .mainpic {
+            width: 300px;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 50%;
+        }
+        .disp {
+            display: none;
+        }
+        .desc {
+            font-size: 18px;
+            margin: 0% 5% 0% 5%;
+            padding: 3% 0% 3% 0%;
+            border: 1px solid black;
+        }
+    }
+</style>
+
+<body>
+    <nav>
+        <div style="margin-left:-15px;" class="container-fluid flex">
+            <div class="row pos">
+                <div class="header-logo">Jude Ampfer</div>
+                <div style="background-color: rgb(15, 89, 89);">
+                    <ul>
+                        <a href="#about">
+                            <li>About</li>
+                        </a>
+                        <a href="#experience">
+                            <li>Experience</li>
+                        </a>
+                        <a href="#involve">
+                            <li>Current Involvements</li>
+                        </a>
+                        <a href="#contact">
+                            <li>Contact</li>
+                        </a>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div class="container-fluid pad">
+        <div style="background-color: black" class="row">
+            <div class="col-lg-4 col-xs-12">
+                <img class="mainpic" src="IMG/Jude1.jpg">
+            </div>
+            <div class="col-lg-8 col-xs-12 main">
+                <h1>Jude Ampfer</h1>
+                <hr/>
+                <h2>Marketing Major</h2>
+                <br>
+                <h3>NKU '23</h3>
+            </div>
+        </div>
+        <div id="about" class="row">
+            <div style="text-align: center" class="col-12">
+                <h1>About Me</h1>
+                <hr/>
+                <h4>My name is Jude Ampfer. I am a life-long Northern Kentucky resident. I attended Newport Central Catholic High School Class of 2019. I am currently a first-year student at Northern Kentucky University pursuing a Bachelor's Degree in Marketing.</h4>
+            </div>
+        </div>
+        <div id="experience" class="row">
+            <div class="col-12">
+                <h1>Previous Experience</h1>
+                <hr/>
+            </div>
+        </div>
+        <div class="row desc">
+            <div class="col-lg-7 col-xs-12">
+                <h6>Newport Central Catholic Open House 2018 Video</h6>
+                <div class="embed-responsive embed-responsive-16by9">
+                    <iframe class="embed-responsive-item" src="IMG/example.mp4" allowfullscreen></iframe>
+                </div>
+                <h6 style="margin-top:8px;">A video I produced for Newport Central Catholic's Open House</h6>
+            </div>
+            <div class="col-lg-5 col-xs-12">
+                <ul>
+                    <li>Promotional Videography for Newport Central Catholic</li>
+                    <ul style="list-style-type:circle;">
+                        <li>Fall 2018</li>
+                    </ul>
+                    <br>
+                    <li>National Honor Society
+                        <ul style="list-style-type:circle;">
+                            <li>Member from Spring 2017 to Spring 2019</li>
+                            <li>Engaged in service projects for local organizations</li>
+                        </ul>
+                    </li>
+                    <br>
+                    <li>Lifeguard at Coney Island
+                        <ul style="list-style-type:circle;">
+                            <li>Summer 2017 & 2018</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div id="involve" class="row">
+            <div class="col-12">
+                <h1>Current Involvements</h1>
+                <hr/>
+            </div>
+        </div>
+        <div class="row desc">
+            <div class="col-12">
+                <ul>
+                    <li>Marketing Major at NKU</li>
+                    <ul style="list-style-type:circle;">
+                        <li>Class of 2023</li>
+                    </ul>
+                    <br>
+                    <li>Sigma Phi Epsilon (ΣΦΕ) KY-ETA Chapter
+                        <ul style="list-style-type:circle;">
+                            <li>Member since Fall 2019</li>
+                        </ul>
+                    </li>
+                    <br>
+                    <li>Lifeguard at the Campbell County YMCA
+                        <ul style="list-style-type:circle;">
+                            <li>Summer 2019 to present</li>
+                        </ul>
+                    </li>
+                    <br>
+                    <li>Web Development Class at NKU</li>
+                    <ul style="list-style-type:circle;">
+                        <li><u><a style="color: rgb(20, 20, 20)" href="https://github.com/jampfer" target="_blank">Click here</a></u> to see my portfolio</li>
+                    </ul>
+                </ul>
+            </div>
+        </div>
+        <div id="contact" class="row footer">
+            <div style="text-align: center; border-right: 1px solid black" class="col-4">
+                <br>
+                <br>
+                <h5> By Email:</h5>
+                <span class="footerlogo">
+                <a href="mailto: jampfer2015@gmail.com"><img class="footerlogo" src="IMG/email.png"></a></span>
+                <br>
+                <a href="mailto: jampfer2015@gmail.com">
+                    <u><h5 class="disp">jampfer2015@gmail.com</h5></u>
+                </a>
+            </div>
+            <div style="text-align: center; border-right: 1px solid black" class="col-4">
+                <h3>Contact Me</h3>
+                <h6>On LinkedIn:</h6>
+                <span class="footerlogo">
+                <a href="https://www.linkedin.com/in/jude-ampfer-673827191/" target="_blank"><img class="footerlogo" src="IMG/LinkedIN.png"></a></span>
+            </div>
+            <div style="text-align: center" class="col-4">
+                <br>
+                <br>
+                <h5> On Facebook:</h5>
+                <span class="footerlogo">
+                <a href="https://www.facebook.com/jude.ampfer" target="_blank"><img class="footerlogo" src="IMG/facebook.png"></a></span>
+            </div>
+        </div>
+    </div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+
+</html>
